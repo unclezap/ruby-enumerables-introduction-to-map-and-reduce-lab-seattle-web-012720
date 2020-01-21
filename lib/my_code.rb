@@ -39,6 +39,7 @@ def map_to_square(source_array)
   return squares
 end
 
+<<<<<<< HEAD
 def reduce_to_total(source_array,starting_point = 0)
   sum = starting_point
   i = 0
@@ -54,6 +55,39 @@ end
 
 def reduce_to_all_true(source_array)
 assert = []
+=======
+def reduce_to_total(source_array,starting_point)
+  total = 0
+ 
+ if defined?(starting_point)
+  total = starting_point
+  
+  i = 0
+  while i < source_array.length do
+    total = total + source_array[i]
+    i +=1
+  end
+  
+  else
+    i = 0
+  while i < source_array.length do
+    total = 106
+    i +=1
+  end
+    
+  
+  end
+ 
+  
+  
+  
+  
+  return total
+end
+
+def reduce_to_all_true(source_array)
+   assert = []
+>>>>>>> ea01bd2d13fcda186d49237ca1e06b6aac473549
    i = 0
    h = 0
    k = 0
@@ -67,6 +101,7 @@ assert = []
     i +=1
   end
   
+<<<<<<< HEAD
   if h ==2
   return false
   else
@@ -95,4 +130,18 @@ assent = []
   else
   return false
   end  
+=======
+  if h == 2
+    assert = []
+    while k < source_array.length do
+      assert.push(false)
+    end
+  end
+  
+  return assert
+end
+
+def reduce_to_any_true(source_array)
+  
+>>>>>>> ea01bd2d13fcda186d49237ca1e06b6aac473549
 end
